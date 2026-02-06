@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  hotstar-app:
+    image: ramsavant/hotstar1:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+    volumes:
+      - /var/lib/hotstar1
